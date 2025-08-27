@@ -254,6 +254,7 @@ class _CupertinoMenuButtonState<T> extends State<CupertinoMenuButton<T>>
     _controller?._controller = this;
   }
 
+/*
   @override
   void reassemble() {
     super.reassemble();
@@ -277,6 +278,7 @@ class _CupertinoMenuButtonState<T> extends State<CupertinoMenuButton<T>>
       _controller?._controller = this;
     }
   }
+*/
 
   @override
   void dispose() {
@@ -299,7 +301,7 @@ class _CupertinoMenuButtonState<T> extends State<CupertinoMenuButton<T>>
   @override
   void rebuild() {
     if (_isOpen && mounted) {
-      _rebuildSignal.value += 1;
+      // _rebuildSignal.value += 1;
     }
   }
 
@@ -2474,7 +2476,7 @@ class _CupertinoNestedMenuState<T>
 
     if(oldWidget.itemBuilder != widget.itemBuilder) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        rebuild();
+        // rebuild();
       });
     }
   }
